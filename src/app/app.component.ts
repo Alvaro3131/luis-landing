@@ -1,20 +1,19 @@
-import { animate, query, stagger, state, style, transition, trigger } from '@angular/animations';
-import { Component, OnInit } from '@angular/core';
+import  AOS from 'aos'
+import { Component, OnInit, AfterViewInit, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  animations: [
-    trigger('slideInFromTop', [
-      state('void', style({ transform: 'translateY(-100%)', opacity: 0 })),
-      transition('void => *', [
-        animate('500ms ease-in-out', style({ transform: 'translateY(0)', opacity: 1 }))
-      ]),
-    ]),
-  ],
 })
-export class AppComponent implements OnInit{
-  ngOnInit(): void {
+export class AppComponent implements OnInit {
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
+  ngOnInit() {
+    if (isPlatformBrowser(this.platformId)) {
+       AOS.init({ once: true, duration: 1000 })
+    }
   }
+
   title = 'landing-page';
 }
