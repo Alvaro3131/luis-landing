@@ -15,3 +15,17 @@
 .whatsapp-icon {
   margin-top:13px;
 }
+
+.image {
+  transition: transform 0.5s, background-position 0.5s; /* Agregamos la transición aquí */
+}
+
+.image:hover {
+  transform: scale(1.1);
+  background-position: 5% 5%;
+}
+
+/* Agregamos una regla para el estado no hover */
+.image:not(:hover) {
+  transform: scale(1); /* Esto vuelve a los valores originales */
+}

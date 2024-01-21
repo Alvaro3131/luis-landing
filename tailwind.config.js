@@ -5,6 +5,10 @@ module.exports = {
     "./node_modules/flowbite/**/*.js" // add this line
   ],
   theme: {
+    borderRadius: {
+      'full': '100px',
+      'lg':'12px',
+    },
     colors: {
       'blue-page': '#00338E',
       'blue': '#1fb6ff',
@@ -20,6 +24,7 @@ module.exports = {
     extend: {
       height: {
         '80-vh': '80vh',
+        '120':'32rem',
       }
     },
   },
