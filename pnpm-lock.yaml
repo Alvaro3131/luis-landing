@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@agm/core':
+    specifier: 3.0.0-beta.0
+    version: 3.0.0-beta.0(@angular/common@17.0.8)(@angular/core@17.0.8)(@types/googlemaps@3.43.3)
   '@angular/animations':
     specifier: ^17.0.0
     version: 17.0.8(@angular/core@17.0.8)
@@ -20,6 +23,9 @@ dependencies:
   '@angular/forms':
     specifier: ^17.0.0
     version: 17.0.8(@angular/common@17.0.8)(@angular/core@17.0.8)(@angular/platform-browser@17.0.8)(rxjs@7.8.1)
+  '@angular/google-maps':
+    specifier: ^17.1.0
+    version: 17.1.0(@angular/common@17.0.8)(@angular/core@17.0.8)(rxjs@7.8.1)
   '@angular/platform-browser':
     specifier: ^17.0.0
     version: 17.0.8(@angular/animations@17.0.8)(@angular/common@17.0.8)(@angular/core@17.0.8)
@@ -35,6 +41,9 @@ dependencies:
   '@angular/ssr':
     specifier: ^17.0.6
     version: 17.0.8(@angular/common@17.0.8)(@angular/core@17.0.8)
+  '@asymmetrik/ngx-leaflet':
+    specifier: ^17.0.0
+    version: 17.0.0(@angular/common@17.0.8)(@angular/core@17.0.8)(leaflet@1.9.4)
   '@types/aos':
     specifier: ^3.0.7
     version: 3.0.7
@@ -47,6 +56,9 @@ dependencies:
   flowbite:
     specifier: ^2.2.1
     version: 2.2.1
+  leaflet:
+    specifier: ^1.9.4
+    version: 1.9.4
   rxjs:
     specifier: ~7.8.0
     version: 7.8.1
@@ -102,6 +114,19 @@ devDependencies:
     version: 5.2.2
 
 packages:
+
+  /@agm/core@3.0.0-beta.0(@angular/common@17.0.8)(@angular/core@17.0.8)(@types/googlemaps@3.43.3):
+    resolution: {integrity: sha512-KNmKbe89Nen7s7+mX63RgX88jBfajUZCFqkHIQ8Fd+Lf/ko/IY6yw4kPh0iYGxgPVPjpsHJ06GZ5m3ZxpEVX9A==}
+    peerDependencies:
+      '@angular/common': ^9.1.0 || ^10.0.0
+      '@angular/core': ^9.1.0 || ^10.0.0
+      '@types/googlemaps': ^3.39.8
+    dependencies:
+      '@angular/common': 17.0.8(@angular/core@17.0.8)(rxjs@7.8.1)
+      '@angular/core': 17.0.8(rxjs@7.8.1)(zone.js@0.14.2)
+      '@types/googlemaps': 3.43.3
+      tslib: 2.6.2
+    dev: false
 
   /@alloc/quick-lru@5.2.0:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
@@ -408,6 +433,20 @@ packages:
       tslib: 2.6.2
     dev: false
 
+  /@angular/google-maps@17.1.0(@angular/common@17.0.8)(@angular/core@17.0.8)(rxjs@7.8.1):
+    resolution: {integrity: sha512-dfKCvtM7tkRsKFYql/Cx8ng5GdRGD0GIWovip/Ynx8OEu2lQDWelqkdtHglIhcbCuOmKDt1ECFh+TA23zAXcTw==}
+    peerDependencies:
+      '@angular/common': ^17.0.0 || ^18.0.0
+      '@angular/core': ^17.0.0 || ^18.0.0
+      rxjs: ^6.5.3 || ^7.4.0
+    dependencies:
+      '@angular/common': 17.0.8(@angular/core@17.0.8)(rxjs@7.8.1)
+      '@angular/core': 17.0.8(rxjs@7.8.1)(zone.js@0.14.2)
+      '@types/google.maps': 3.54.10
+      rxjs: 7.8.1
+      tslib: 2.6.2
+    dev: false
+
   /@angular/platform-browser-dynamic@17.0.8(@angular/common@17.0.8)(@angular/compiler@17.0.8)(@angular/core@17.0.8)(@angular/platform-browser@17.0.8):
     resolution: {integrity: sha512-BIXNKnfBZb8sdluQ7WIhIXFuVnsJJ0SV+aiMKzQ7B6XhWoAXZQnlvON2thydjIIVuCvaF3YmWTbILI2K8YZ2jQ==}
     engines: {node: ^18.13.0 || >=20.9.0}
@@ -489,6 +528,19 @@ packages:
   /@assemblyscript/loader@0.10.1:
     resolution: {integrity: sha512-H71nDOOL8Y7kWRLqf6Sums+01Q5msqBW2KhDUTemh1tvY04eSkSXrK0uj/4mmY0Xr16/3zyZmsrxN7CKuRbNRg==}
     dev: true
+
+  /@asymmetrik/ngx-leaflet@17.0.0(@angular/common@17.0.8)(@angular/core@17.0.8)(leaflet@1.9.4):
+    resolution: {integrity: sha512-Tg09780yg1pPRR7k9Z0B0Fb3Mr4SMXYfi+hii8S0McHiqiUqkB+ZhhB4hJq83v4cuvcYgZjtkz+p06lCJY/z+w==}
+    peerDependencies:
+      '@angular/common': '17'
+      '@angular/core': '17'
+      leaflet: '1'
+    dependencies:
+      '@angular/common': 17.0.8(@angular/core@17.0.8)(rxjs@7.8.1)
+      '@angular/core': 17.0.8(rxjs@7.8.1)(zone.js@0.14.2)
+      leaflet: 1.9.4
+      tslib: 2.6.2
+    dev: false
 
   /@babel/code-frame@7.23.5:
     resolution: {integrity: sha512-CgH3s1a96LipHCmSUmYFPwY7MNx8C3avkq7i4Wl3cfa662ldtUe4VM1TPXX70pfmrlWTb6jLqTYrZyT2ZTJBgA==}
@@ -2447,6 +2499,15 @@ packages:
       '@types/qs': 6.9.11
       '@types/serve-static': 1.15.5
     dev: true
+
+  /@types/google.maps@3.54.10:
+    resolution: {integrity: sha512-N6gwM01mKhooXaw+IKbUH7wJcIJCn8U60VoaVvom5EiQjmfgevhQ+0+/r17beXW5j8ad2x+WPr0iyOUodCw4/w==}
+    dev: false
+
+  /@types/googlemaps@3.43.3:
+    resolution: {integrity: sha512-ZWNoz/O8MPEpiajvj7QiqCY8tTLFNqNZ/a+s+zTV58wFVNAvvqV4bdGfnsjTb5Cs4V6wEsLrX8XRhmnyYJ2Tdg==}
+    deprecated: 'Types for the Google Maps browser API have moved to @types/google.maps. Note: these types are not for the googlemaps npm package, which is a Node API.'
+    dev: false
 
   /@types/http-errors@2.0.4:
     resolution: {integrity: sha512-D0CFMMtydbJAegzOyHjtiKPLlvnm3iTZyZRSZoLq2mRhDdmLfIWOCYPfQJ4cu2erKghU++QvjcUjp/5h7hESpA==}
@@ -5015,6 +5076,10 @@ packages:
       picocolors: 1.0.0
       shell-quote: 1.8.1
     dev: true
+
+  /leaflet@1.9.4:
+    resolution: {integrity: sha512-nxS1ynzJOmOlHp+iL3FyWqK89GtNL8U8rvlMOsQdTTssxZwCXh8N2NB3GDQOL+YR3XnWyZAxwQixURb+FA74PA==}
+    dev: false
 
   /less-loader@11.1.0(less@4.2.0)(webpack@5.89.0):
     resolution: {integrity: sha512-C+uDBV7kS7W5fJlUjq5mPBeBVhYpTIm5gB09APT9o3n/ILeaXVsiSFTbZpTJCJwQ/Crczfn3DmfQFwxYusWFug==}

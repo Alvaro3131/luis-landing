@@ -1,12 +1,16 @@
 import  AOS from 'aos'
 import { Component, OnInit, AfterViewInit, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent implements OnInit {
+  longitude = -20.028333;
+  latitude = -12.043333;
+
   products=[
     {
       name:'Alitas',
@@ -24,7 +28,7 @@ export class AppComponent implements OnInit {
       img:'../assets/image-pollo-entero.jpg'
     },
     {
-      name:'Pechuga de Pollo',
+      name:'Filete de Pollo',
       precio:8,
       img:'../assets/image-pechuga.jpg'
     },
