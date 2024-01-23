@@ -13,6 +13,11 @@ export class AppComponent implements OnInit {
 
   products=[
     {
+      name:'Pollo Entero',
+      precio:11,
+      img:'../assets/image-pollo-entero.jpg'
+    },
+    {
       name:'Alitas',
       precio:10,
       img:'../assets/image-alita.jpg'
@@ -22,21 +27,22 @@ export class AppComponent implements OnInit {
       precio:8,
       img:'../assets/image-pierna.jpg'
     },
-    {
-      name:'Pollo Entero',
-      precio:11,
-      img:'../assets/image-pollo-entero.jpg'
-    },
+
     {
       name:'Filete de Pollo',
       precio:8,
       img:'../assets/image-pechuga.jpg'
     },
     {
+      name:'Menudencia',
+      precio:8,
+      img:'../assets/image-menudencia.png'
+    },
+    {
       name:'Higado',
       precio:8,
       img:'../assets/image-higado.png'
-    }
+    },
   ]
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 

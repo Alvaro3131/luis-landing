@@ -2,8 +2,8 @@
   position:fixed;
   width:60px;
   height:60px;
-  bottom:40px;
-  right:40px;
+  bottom:20px;
+  right:20px;
   background-color:#25d366;
   color:#FFF;
   border-radius:50px;
@@ -18,10 +18,12 @@
 
 .image {
   transition: transform 0.5s, background-position 0.5s; /* Agregamos la transición aquí */
+  background-size: cover; /* o puedes usar 'contain' según tus preferencias */
+  background-repeat: no-repeat;
 }
 
 .image:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
   background-position: 5% 5%;
 }
 
