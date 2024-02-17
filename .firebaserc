@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "avicola-page"
+  },
+  "targets": {
+    "avicola-page": {
+      "hosting": {
+        "landing-page": [
+          "avicola-page"
+        ]
+      }
+    }
   }
 }
