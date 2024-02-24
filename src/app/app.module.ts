@@ -14,14 +14,17 @@ import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { HttpClientModule } from '@angular/common/http';
 import { getStorage, provideStorage } from '@angular/fire/storage';
+import { CommonModule } from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    ConfigProductsComponent
+    ConfigProductsComponent,
+    PrincipalComponent
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
